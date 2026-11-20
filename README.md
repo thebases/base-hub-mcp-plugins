@@ -25,6 +25,16 @@ When the plugin is enabled you are prompted for:
 
 Then run `/mcp` and sign in to Base HUB (OAuth). Change the values later in `/config`.
 
+### Upload as a zip
+
+Do not zip the repo root, because it is a marketplace and has no `plugin.json`. Build the plugin zip instead:
+
+```bash
+python scripts/build_plugin_zip.py   # -> dist/base-hub.zip
+```
+
+Upload `dist/base-hub.zip`. It has `.claude-plugin/plugin.json` at the zip root.
+
 ## Troubleshooting
 
 - Server missing in `/mcp`: a required setting is empty. Open `/config` and fill both values, or check the `/plugin` Errors tab.
