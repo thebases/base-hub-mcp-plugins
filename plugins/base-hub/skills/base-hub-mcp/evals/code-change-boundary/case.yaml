@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: code-change-boundary
+expected_outcome: |
+  Explains which parts need the development team, and offers what can be done with the app as is.

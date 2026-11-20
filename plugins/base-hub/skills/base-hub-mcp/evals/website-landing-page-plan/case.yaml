@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: website-landing-page-plan
+expected_outcome: |
+  A complete, ordered website plan that respects the real behaviour of the website module.

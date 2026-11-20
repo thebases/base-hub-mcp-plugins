@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "base-hub": {
+      "type": "http",
+      "url": "${user_config.base_hub_url}",
+      "headers": {
+        "X-Database-Name": "${user_config.base_hub_db}"
+      }
+    }
+  }
+}

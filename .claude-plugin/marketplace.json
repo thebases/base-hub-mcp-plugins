@@ -1,0 +1,15 @@
+{
+  "name": "base-hub-marketplace",
+  "description": "Plugins for operating Base HUB through MCP",
+  "owner": {
+    "name": "The Base"
+  },
+  "plugins": [
+    {
+      "name": "base-hub",
+      "source": "./plugins/base-hub",
+      "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector that asks each user for their own tenant URL and database",
+      "version": "1.0.0"
+    }
+  ]
+}

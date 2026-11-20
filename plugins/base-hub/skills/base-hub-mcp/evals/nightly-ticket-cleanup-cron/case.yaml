@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: nightly-ticket-cleanup-cron
+expected_outcome: |
+  Automation action + cron, with the sudo/preview warning and a correct way to express the date condition.

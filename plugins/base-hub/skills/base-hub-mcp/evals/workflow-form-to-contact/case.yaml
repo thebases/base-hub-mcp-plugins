@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: workflow-form-to-contact
+expected_outcome: |
+  A workflow plan with a model trigger on form submissions, catalog steps, validate+publish, and a test via run records.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: knowledge-question-citation
+expected_outcome: |
+  Searches knowledge with short keywords, reads before answering, cites doc path and section, separates doc content from own knowledge.
