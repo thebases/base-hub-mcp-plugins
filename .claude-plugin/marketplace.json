@@ -8,7 +8,7 @@
     {
       "name": "base-hub",
       "source": "./plugins/base-hub",
-      "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector that asks each user for their own tenant URL and database",
+      "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector at https://edc.thebase.vn/mcp",
       "version": "1.0.0"
     }
   ]

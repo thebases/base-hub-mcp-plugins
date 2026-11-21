@@ -2,9 +2,9 @@
   "mcpServers": {
     "base-hub": {
       "type": "http",
-      "url": "${user_config.base_hub_url}",
-      "headers": {
-        "X-Database-Name": "${user_config.base_hub_db}"
+      "url": "https://edc.thebase.vn/mcp",
+      "oauth": {
+        "clientId": "mcp_5183261e023e8df0"
       }
     }
   }

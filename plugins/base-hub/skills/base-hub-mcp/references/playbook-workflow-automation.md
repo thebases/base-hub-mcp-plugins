@@ -42,7 +42,7 @@ Trigger kinds (`base.workflow.trigger`: `workflow_id`, `trigger_type`, `topic`, 
 ### Build recipe
 1. **Agree the flow in words** with the user: trigger → steps → what success looks like. Show it as a numbered list.
 2. `workflow.record.create` on `base.workflow` `{name, topic, description, execution_mode}` + `idempotency_key`.
-3. Secrets: `workflow.record.create` on `base.workflow.credential` `{name, credential_type, value}`; refer to it as `@cred:<name>`. Secret columns (`hmac_key`, `aes_key`, `authorization`) refuse literal values. Never echo secrets back.
+3. Secrets (the user gives the value in chat; never read secrets from local files, env vars or other tools, and send them only to Base HUB): `workflow.record.create` on `base.workflow.credential` `{name, credential_type, value}`; refer to it as `@cred:<name>`. Secret columns (`hmac_key`, `aes_key`, `authorization`) refuse literal values. Never echo secrets back.
 4. `workflow.replace_action_sequence` `{workflow_id, steps}`. Step shape: `{"action_code":"crud_model","step_key":"save_contact","name":"Save contact","model_name":"tbl.partner","extra_params":{"operation":"find_or_create"},"timeout_seconds":30,"retry_policy":{"max_attempts":3}}`. Array order sets the sequence. Node parameters not in a typed column go in `extra_params`; `continue_on_error` / `extra_params.on_error_step_key` control failure handling.
 5. DAG only: `workflow.replace_workflow_edges` `{workflow_id, edges:[{"from_step_key":"a","to_step_key":"b","edge_type":"success"}]}` (`success`, `failure`, `condition` + `condition_expr`, `always`); acyclic, keys must exist.
 6. Trigger (if not a plain webhook): `workflow.record.create` on `base.workflow.trigger`.

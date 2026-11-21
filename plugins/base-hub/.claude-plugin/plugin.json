@@ -2,19 +2,9 @@
   "name": "base-hub",
   "displayName": "Base HUB",
   "version": "1.0.0",
-  "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector. Asks for your tenant's MCP URL and database when enabled.",
-  "userConfig": {
-    "base_hub_url": {
-      "type": "string",
-      "title": "Base HUB MCP URL",
-      "description": "Your tenant's MCP endpoint, for example https://your-tenant.thebase.vn/mcp",
-      "required": true
-    },
-    "base_hub_db": {
-      "type": "string",
-      "title": "Tenant database name",
-      "description": "Sent as the X-Database-Name header so you land in the right tenant. Ask your Base HUB admin if unsure.",
-      "required": true
-    }
-  }
+  "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector (https://edc.thebase.vn/mcp).",
+  "author": {
+    "name": "The Base"
+  },
+  "icon": ".claude-plugin/icon.png"
 }
