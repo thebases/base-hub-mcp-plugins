@@ -1,8 +1,8 @@
 {
-  "name": "base-hub",
-  "displayName": "Base HUB",
+  "name": "base-hub-edc",
+  "displayName": "Base Hub EDC",
   "version": "1.0.0",
-  "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector (https://edc.thebase.vn/mcp).",
+  "description": "An EDC Operation Agent skill plus a Base HUB MCP connector (https://edc.thebase.vn/mcp).",
   "author": {
     "name": "The Base"
   },

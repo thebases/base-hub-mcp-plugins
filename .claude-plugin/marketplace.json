@@ -6,9 +6,9 @@
   },
   "plugins": [
     {
-      "name": "base-hub",
+      "name": "base-hub-edc",
       "source": "./plugins/base-hub",
-      "description": "Base HUB Operation Agent skill plus a Base HUB MCP connector at https://edc.thebase.vn/mcp",
+      "description": "An EDC Operation Agent skill plus a Base HUB MCP connector at https://edc.thebase.vn/mcp",
       "version": "1.0.0"
     }
   ]

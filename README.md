@@ -23,10 +23,10 @@ Then run `/mcp` and sign in to Base HUB (OAuth).
 Do not zip the repo root, because it is a marketplace and has no `plugin.json`. Build the plugin zip instead:
 
 ```bash
-python scripts/build_plugin_zip.py   # -> dist/base-hub.zip
+python scripts/build_plugin_zip.py   # -> dist/base-hub-edc.zip
 ```
 
-Upload `dist/base-hub.zip`. It has `.claude-plugin/plugin.json` at the zip root.
+Upload `dist/base-hub-edc.zip`. It has `.claude-plugin/plugin.json` at the zip root.
 
 ## Troubleshooting
 
